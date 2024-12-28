@@ -9,7 +9,6 @@ export const getAllMovies = async (req, res) => {
             data: response.data
         });
     } catch (error) {
-        console.log(error);
         res.json({
             success: false,
             status: 500,
@@ -28,7 +27,6 @@ export const getMovieById = async (req, res) => {
             data: response.data
         });
     } catch (error) {
-        console.log(error);
         res.json({
             success: false,
             status: 500,
